@@ -1,0 +1,78 @@
+add_newline = false
+
+format = """
+[󰉋 ](fg:#bda36a)$directory([󰇝](fg:#5c6a62) $python$nodejs$rust$golang$lua$custom)( [󰇝](fg:#5c6a62) $git_branch)$git_status
+$character"""
+
+right_format = """[󱑎 ](fg:#5c6a62)$time"""
+
+[character]
+success_symbol = "[󰄾 ](fg:#8da367)"
+error_symbol = "[󰄾 ](fg:#c75c5e)"
+
+[directory]
+style = "fg:#e2e8e4"
+format = "[$path]($style) "
+
+[git_branch]
+symbol = "󰊢 "
+style = "fg:#f0acc5"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "fg:#f0acc5"
+format = "([$all_status$ahead_behind]($style))"
+
+[time]
+disabled = false
+style = "fg:#5c6a62"
+time_format = "%I:%M%P"
+format = "[$time]($style)"
+
+[custom.css]
+detect_extensions = ["css"]
+symbol = " "
+style = "fg:#8fd4cc"
+format = "[$symbol]($style)"
+
+[c]
+symbol = " "
+style = "fg:#8fd4cc"
+format = "[$symbol]($style)"
+
+[cpp]
+symbol = " "
+style = "fg:#8fd4cc"
+format = "[$symbol]($style)"
+
+[dotnet]
+symbol = "󰌛 "
+style = "fg:#8fd4cc"
+format = "[$symbol]($style)"
+
+[python]
+symbol = "󱔎 "
+style = "fg:#8fd4cc"
+format = "[$symbol]($style)"
+
+[nodejs]
+symbol = "󰎙 "
+style = "fg:#8fd4cc"
+format = "[$symbol]($style)"
+
+[rust]
+symbol = "󱘗 "
+style = "fg:#8fd4cc"
+format = "[$symbol]($style)"
+
+[golang]
+symbol = "󰟓 "
+style = "fg:#8fd4cc"
+format = "[$symbol]($style)"
+
+[lua]
+symbol = "󰢱 "
+style = "fg:#8fd4cc"
+format = "[$symbol]($style)"
+
+
