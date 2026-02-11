@@ -1,0 +1,66 @@
+window-rule {
+    geometry-corner-radius 0
+    clip-to-geometry true
+    draw-border-with-background false
+
+    focus-ring {
+        	off
+        	width 1
+					active-color "#aeaed1"
+    inactive-color "#252530"
+    urgent-color "#f3be7c"
+    }
+
+    border {
+				  on
+				  width 1
+					active-color "#aeaed1"
+				  inactive-color "#252530"
+				}
+
+    shadow {
+        	on
+        	softness 0
+        	spread 0
+        	offset x=0 y=0
+        	draw-behind-window true
+        	color "#00000099"
+        }
+    }
+
+    layer-rule {
+        match namespace="^noctalia-wallpaper*"
+        place-within-backdrop true
+    }
+
+		window-rule {
+						match app-id="kitty"
+						match app-id="vesktop"
+						match app-id="dolphin"
+						opacity 0.95
+		}
+
+		window-rule {
+						match app-id="sleepy-launcher"
+						open-floating true
+		}
+
+		window-rule {
+						match app-id="mpv"
+						open-floating true
+				    default-window-height { fixed 720; }
+				    default-column-width { fixed 1280; }
+		}
+
+		window-rule {
+						match app-id="firefox"
+						match app-id="vesktop"
+						open-maximized true
+		}
+
+    window-rule {
+            match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+				    match app-id="zoom"
+				    open-floating true
+    }
+
