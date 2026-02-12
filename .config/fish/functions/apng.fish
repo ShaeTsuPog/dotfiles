@@ -14,6 +14,7 @@ function apng
         ffmpeg -i "$input" -vf "scale='if(gt(iw,ih),220,-1)':'if(gt(iw,ih),-1,220)':flags=lanczos" \
         -f apng -plays 0 -pred avg -pix_fmt rgba "$output"
     else
-        echo "Usage: apng [file.gif] or apng -a"
+        echo "Usage: gif2apng [file.gif] or gif2apng -a"
     end
 end
+

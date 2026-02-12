@@ -20,6 +20,7 @@
   "relative_line_numbers": "enabled",
   "ui_font_size": 16,
   "buffer_font_size": 14,
+  "ui_font_family": "Adwaita Sans",
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "theme": {
     "mode": "dark",
@@ -27,6 +28,7 @@
     "dark": "Vague",
   },
   "tab_size": 2,
+  "hard_tabs": false,
   "disable_ai": true,
   "colorize_brackets": true,
   "lsp_document_colors": "background",
