@@ -1,3 +1,11 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
 {
   "icon_theme": "Colored Zed Icons Theme Dark",
   "telemetry": {
@@ -9,6 +17,7 @@
   },
   "base_keymap": "VSCode",
   "vim_mode": true,
+  "relative_line_numbers": "enabled",
   "ui_font_size": 16,
   "buffer_font_size": 15,
   "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -35,5 +44,10 @@
         },
       },
     },
+  },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true,
+    "show_close_button": "hidden",
   },
 }
