@@ -23,4 +23,3 @@ if status is-interactive
         tput cup $LINES 0
     end
 end
-
