@@ -1,6 +1,4 @@
-// Zed keymap
-//
-// For information on binding keys, see the Zed
+// Zed keymap // // For information on binding keys, see the Zed
 // documentation: https://zed.dev/docs/key-bindings
 //
 // To see the default key bindings run `zed: open default keymap`
@@ -13,13 +11,15 @@
     },
   },
   {
-    "context": "Editor && vim_mode == normal",
+    "context": "Editor && (vim_mode == normal || vim_mode == visual)",
     "bindings": {
       "space": null,
+      "ctrl-tab": "pane::ActivatePreviousItem",
+      "ctrl-shift-tab": "pane::ActivateNextItem",
     },
   },
   {
-    "context": "Editor && (vim_mode == normal || vim_mode == insert)",
+    "context": "Editor && (vim_mode == normal || vim_mode == visual)",
     "bindings": {
       "space w": "workspace::Save",
       "space q": "pane::CloseActiveItem",

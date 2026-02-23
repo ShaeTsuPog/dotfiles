@@ -1,12 +1,20 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "languages": {
+    "CSS": {
+      "indent_guides": {
+        "background_coloring": "disabled",
+      },
+    },
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "prettier": {
+    "allowed": false,
+  },
+  "text_rendering_mode": "subpixel",
   "icon_theme": "Colored Zed Icons Theme Dark",
   "telemetry": {
     "diagnostics": false,
@@ -20,12 +28,37 @@
   "relative_line_numbers": "enabled",
   "ui_font_size": 16,
   "buffer_font_size": 14,
-  "ui_font_family": "Adwaita Sans",
+  "ui_font_family": "Roboto",
   "buffer_font_family": "JetBrainsMono Nerd Font",
-  "theme": {
-    "mode": "dark",
-    "light": "One Light",
-    "dark": "Vague",
+  "theme": "Vague",
+  "experimental.theme_overrides": {
+    "syntax": {
+      "tag": {
+        "color": "#8ba9c1",
+      },
+      "class": {
+        "color": "#d8647e",
+      },
+      "id": {
+        "color": "#6e94b2",
+      },
+      "pseudo": {
+        "color": "#f5cb96",
+      },
+      "unit": {
+        "color": "#f3be7c",
+      },
+      "variable": {
+        "color": "#c9b1ca",
+      },
+      "property": {
+        "color": "#bebeda",
+      },
+    },
+  },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware",
   },
   "tab_size": 2,
   "hard_tabs": false,

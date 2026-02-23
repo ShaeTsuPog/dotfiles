@@ -1,7 +1,8 @@
 spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
 spawn-sh-at-startup "qs -c noctalia-shell"
-spawn-at-startup "nvibrant" "100" "0" "0" "0" "0" "100"
+spawn-at-startup "nvibrant" "400" "0" "0" "0" "0" "400"
 spawn-at-startup "sh" "-c" "mpd --no-daemon & sleep 1 && mpc pause"
 spawn-at-startup "mpd-mpris"
 spawn-at-startup "vesktop"
-spawn-at-startup "steam"
+spawn-at-startup "steam -silent %U"
+

@@ -61,6 +61,7 @@ window-rule {
 
 window-rule {
   match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+  match app-id=r#"dev.zed.Zed$"# title="^Zed — Settings$"
 	match app-id="zoom"
 	open-floating true
 }
@@ -76,3 +77,4 @@ window-rule {
 	open-floating true
 	default-floating-position x=0 y=0 relative-to="bottom-right"
 }
+
